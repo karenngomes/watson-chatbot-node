@@ -1,0 +1,23 @@
+{
+  "name": "watson-chatbot-node",
+  "version": "1.0.0",
+  "description": "A chatbot made in NodeJS and using Watson Assistant",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karenngomes/watson-chatbot-node.git"
+  },
+  "keywords": [
+    "chatbot",
+    "nodejs"
+  ],
+  "author": "Karen Gomes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karenngomes/watson-chatbot-node/issues"
+  },
+  "homepage": "https://github.com/karenngomes/watson-chatbot-node#readme"
+}
