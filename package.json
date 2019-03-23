@@ -4,6 +4,7 @@
   "description": "A chatbot made in NodeJS and using Watson Assistant",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,5 +25,8 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "watson-developer-cloud": "^3.18.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
   }
 }
