@@ -18,7 +18,7 @@ const assistant = new AssistantV1({
 });
 
 app.post("/conversation/", (req, res) => {
-  const { text, context = {} } = req.params;
+  const { text, context = {} } = req.body;
   const params = {
     input: { text },
     workspace_id: process.env.WORKSPACE_ID,
