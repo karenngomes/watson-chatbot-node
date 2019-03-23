@@ -1,3 +1,5 @@
+const textInput = document.getElementById("textInput");
+const chat = document.getElementById("chat");
 let context = {};
 
 const chatMessageTemplate = (message, from) => `
@@ -12,7 +14,6 @@ const insertTemplateInChat = template => {
   const div = document.createElement("div");
   div.innerHTML = template;
 
-  const chat = document.getElementById("chat");
   chat.appendChild(div);
 };
 
@@ -34,7 +35,6 @@ const getWatsonMessageAndInsertTemplate = async (text = "") => {
   insertTemplateInChat(template);
 };
 
-const textInput = document.getElementById("textInput");
 textInput.addEventListener("keydown", event => {
   if (event.keyCode === 13 && textInput.value) {
     const template = chatMessageTemplate(textInput.value, "user");
