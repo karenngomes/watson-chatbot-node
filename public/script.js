@@ -7,3 +7,11 @@ const chatMessageTemplate = (message, from) => `
         </div>
     </div>
 `;
+
+const insertTemplateInChat = template => {
+  const div = document.createElement("div");
+  div.innerHTML = template;
+
+  const chat = document.getElementById("chat");
+  chat.appendChild(div);
+};
